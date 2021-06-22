@@ -3,7 +3,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './data/produce.db3'
+      filename: './data/flights.db3'
     },
     useNullAsDefault: true,
     migrations:{
@@ -13,13 +13,13 @@ module.exports = {
       directory: "./data/seeds"
     }
   },
-
-  staging: {
-    
-  },
-
   production: {
-    
+    client:"mysql",
+    connection:{
+      host:"mydb.learn.mulesoft.com:3306",
+      user:"mule",
+      password:"mule",
+      database:"training"
+    }
   }
-
 };
