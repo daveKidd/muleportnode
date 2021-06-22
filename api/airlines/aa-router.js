@@ -1,6 +1,6 @@
 const express = require('express');
 const db = require("../../data/dbConfig.js")
-const {checkDest} = require("./airlines-mw.js")
+const {checkAADest} = require("./airlines-mw.js")
 
 const router = express.Router();
 
@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/:dest',checkDest, (req, res) => {
+router.get('/:dest',checkAADest, (req, res) => {
   const { dest } = req.params
   const destUp = dest.toUpperCase();
 

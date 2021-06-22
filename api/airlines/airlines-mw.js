@@ -1,4 +1,4 @@
-const checkDest = (req,res,next)=>{
+const checkAADest = (req,res,next)=>{
     const {dest} = req.params
     const destUp = dest.toUpperCase()
     if(destUp != "LAX" && destUp != "SFO" && destUp != "CLE"){
@@ -8,6 +8,17 @@ const checkDest = (req,res,next)=>{
     }
 }
 
+const checkUnitedDest = (req,res,next)=>{
+    const {dest} = req.params
+    const destUp = dest.toUpperCase()
+    if(destUp != "LAX" && destUp != "SFO" && destUp != "CLE" && destUp != "PDX" && destUp != "PDF"){
+        res.status(404).send("<span style='white-space: pre-line'>\nThe only destinations United serves are: SFO, LAX, CLE, PDX, and PDF\n\nPlease try again in this format: https://muleportnode.herokuapp.com/united/lax (or SFO, CLE, PDX, or PDF) 🙂\n</span>")
+    }else{
+        next()
+    }
+}
+
 module.exports = {
-    checkDest
+    checkAADest,
+    checkUnitedDest
 }
