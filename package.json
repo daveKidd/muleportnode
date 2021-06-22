@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/LambdaSchool/node-db2-guided.git"
+        "url": "git+https://github.com/daveKidd/muleportnode.git"
     },
     "dependencies": {
         "express": "^4.17.1",
