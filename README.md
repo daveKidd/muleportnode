@@ -1,18 +1,21 @@
-# DB II Guided Project
+# Dave Kidd's MuleSoft Node/Express Technical Exercise
 
-Guided project **DB II** Module.
+--Hello!  I wanted to create the API from the technical project using Node and Express  
 
-## Prerequisites
+--Knex runs the MySQL (on Heroku) and SQLite (locally) queries to retrieve the American Airlines flights
 
-- [SQLite Studio](https://sqlitestudio.pl/index.rvt?act=download) installed.
-- a REST client alike [Insomnia](https://insomnia.rest/download/) or [Postman](https://www.getpostman.com/downloads/) installed.
-- create a free account for [DB Designer](https://dbdesigner.net).
+--The node-fetch package was used to get the JSON data for United  
 
-## Project Setup
+--Middleware was used to make sure the destinations were correct
 
-- [ ] fork and clone this repository.
-- [ ] **CD into the folder** where you cloned **your fork**.
-- [ ] type `npm i` to download dependencies.
-- [ ] type `npm run server` to start the API.
+--Routes were used to handle the American Airlines and United get requests
 
-Please follow along as the instructor explores schema design with this API.
+--Locally, the project uses migrations and seeds to create a SQLite database identical to the online version that we can retrieve the American Airlines flights from
+
+--When deployed to Heroku, it uses the live MySQL Database given in the instructions
+
+--I enjoyed creating this, thanks for taking a look, and I hope we can be in touch soon!  
+
+
+Dave Kidd
+
