@@ -16,7 +16,8 @@ module.exports = {
   production: {
     client:"mysql",
     connection:{
-      host:"mydb.learn.mulesoft.com:3306",
+      host:"mydb.learn.mulesoft.com",
+      port:3306,
       user:"mule",
       password:"mule",
       database:"training"

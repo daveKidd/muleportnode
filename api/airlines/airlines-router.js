@@ -22,7 +22,7 @@ router.get('/:dest', (req, res) => {
       res.json(airports);
     })
     .catch(err => {
-      res.status(500).json({ message: 'Failed to retrieve fruit' });
+      res.status(500).json({ message: 'Failed to retrieve airlines:' + err.message });
     });
 });
 
