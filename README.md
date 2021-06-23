@@ -14,6 +14,8 @@
 
 --When deployed to Heroku, it uses the live MySQL Database given in the instructions
 
+--Config vars were setup on Heroku so I could hide the password, username, and database on the server
+
 --I enjoyed creating this, thanks for taking a look, and I hope we can be in touch soon!  
 
 
