@@ -18,9 +18,9 @@ module.exports = {
     connection:{
       host:"mudb.learn.mulesoft.com",
       port:3306,
-      user:"mule",
-      password:"mule",
-      database:"training"
+      user:process.env.USERNAME,
+      password:process.env.PASSWORD,
+      database:process.env.DATABASE
     }
   }
 };
