@@ -17,7 +17,7 @@ module.exports = {
     client:"mysql",
     connection:{
       host:"mudb.learn.mulesoft.com",
-      port:process.env.PORT,
+      port:3306,
       user:process.env.USERNAME,
       password:process.env.PASSWORD,
       database:process.env.DATABASE
